@@ -1,49 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:context=".MainActivity"
-                tools:showIn="@layout/activity_main">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
 
     <TextView
         android:id="@+id/descriptionText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/fortune_description"
-        android:textSize="@dimen/description_text_size" />
+        android:textSize="@dimen/description_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/fortunateImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/descriptionText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:contentDescription="The Fortunate ball image"
-        android:src="@drawable/img_crystal" />
+        android:contentDescription="The Fortune ball image"
+        android:src="@drawable/img_crystal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText"/>
 
     <TextView
         android:id="@+id/fortuneText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fortunateImage"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="@dimen/fortune_text_size"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fortunateImage"/>
 
     <Button
         android:id="@+id/fortuneButton"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/fortuneText"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="What's my fortune?" />
+        android:text="What's my fortune?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
