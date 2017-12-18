@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Шар Судьбы</string>
+    <string name="action_settings">Настройки</string>
+    <string name="fortune_description">Задайте вопрос, на который можно ответить «да» или «нет», затем прикоснитесь к Шару Судьбы.</string>
+</resources>
