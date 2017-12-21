@@ -3,4 +3,5 @@
     <string name="app_name">Шар Судьбы</string>
     <string name="action_settings">Настройки</string>
     <string name="fortune_description">Задайте вопрос, на который можно ответить «да» или «нет», затем прикоснитесь к Шару Судьбы.</string>
+    <string name="crystal_ball_image_content_description">Изображение Шара Судьбы</string>
 </resources>
