@@ -27,27 +27,19 @@
         app:layout_constraintHorizontal_weight="4"
         app:layout_constraintVertical_weight="4"/>
 
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.25"/>
-
     <TextView
         android:id="@+id/fortuneText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_margin="60dp"
         android:gravity="center"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="@dimen/fortune_text_size"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"/>
+        app:layout_constraintLeft_toLeftOf="@+id/fortunateImage"
+        app:layout_constraintTop_toTopOf="@+id/fortunateImage"
+        app:layout_constraintRight_toRightOf="@+id/fortunateImage"
+        app:layout_constraintBottom_toBottomOf="@+id/fortunateImage"/>
 
     <TextView
         android:id="@+id/descriptionText"
