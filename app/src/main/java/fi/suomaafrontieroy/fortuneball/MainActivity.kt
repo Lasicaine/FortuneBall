@@ -13,7 +13,6 @@ import com.daimajia.androidanimations.library.YoYo
 
 
 class MainActivity : AppCompatActivity() {
-    private var fortuneList = arrayOf("Don’t count on it", "Ask again later", "You may rely on it", "Without a doubt", "Outlook not so good", "It's decidedly so", "Signs point to yes", "Yes definitely", "Yes", "My sources say NO")
 
     private lateinit var fortuneText: TextView
     private lateinit var fortuneBallImage: ImageView
@@ -25,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
+
+        val fortuneList = resources.getStringArray(R.array.fortune_messages)
 
         fortuneText = findViewById<View>(R.id.fortuneText) as TextView
         fortuneBallImage = findViewById<View>(R.id.fortunateImage) as ImageView

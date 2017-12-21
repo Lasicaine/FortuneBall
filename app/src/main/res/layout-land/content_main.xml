@@ -17,7 +17,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:contentDescription="The Fortune ball image"
+        android:contentDescription="@string/crystal_ball_image_content_description"
         android:src="@drawable/img_crystal"
         app:layout_constraintBottom_toTopOf="@+id/descriptionText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/guideline"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2"/>
+        app:layout_constraintGuide_percent="0.15"/>
 
     <TextView
         android:id="@+id/fortuneText"

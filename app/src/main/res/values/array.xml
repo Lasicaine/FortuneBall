@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fortune_messages">
+        <item>Don’t count on it</item>
+        <item>Ask again later</item>
+        <item>You may rely on it</item>
+        <item>Without a doubt</item>
+        <item>Outlook not so good</item>
+        <item>It's decidedly so</item>
+        <item>Signs point to yes</item>
+        <item>Yes definitely</item>
+        <item>Yes</item>
+        <item>My sources say NO</item>
+    </string-array>
+</resources>
